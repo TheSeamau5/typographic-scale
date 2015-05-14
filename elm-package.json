@@ -1,7 +1,7 @@
 {
     "version": "1.0.0",
     "summary": "Library for working with typographic scales",
-    "repository": "https://github.com/USER/PROJECT.git",
+    "repository": "https://github.com/TheSeamau5/typographic-scale.git",
     "license": "BSD3",
     "source-directories": [
         "src"
