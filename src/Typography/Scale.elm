@@ -1,4 +1,4 @@
-module Typography.Scale where
+module Typography.Scale exposing (..)
 {-| Module for creating and using typographic scales.
 
 # Definition
@@ -88,11 +88,15 @@ minorThird =
 
 
 
+{-| The size of the interval is `8 : 5`
+-}
 minorSixth : Float -> Scale
 minorSixth =
   makeScale ( 8 / 5 )
 
 
+{-| The size of the interval is `16 : 9`
+-}
 minorSeventh : Float -> Scale
 minorSeventh =
   makeScale ( 16 / 9 )
@@ -112,16 +116,22 @@ majorSecond =
   makeScale ( 9 / 8 )
 
 
+{-| The size of the interval is `5 : 4`
+-}
 majorThird : Float -> Scale
 majorThird =
   makeScale 1.250
 
 
+{-| The size of the interval is `27 : 16`
+-}
 majorSixth : Float -> Scale
 majorSixth =
   makeScale ( 27 / 16 )
 
 
+{-| The size of the interval is `15 : 8`
+-}
 majorSeventh : Float -> Scale
 majorSeventh =
   makeScale ( 15 / 8 )
@@ -131,16 +141,22 @@ majorSeventh =
 -- Perfect Scales --
 --------------------
 
+{-| The size of the interval is `4 : 3`
+-}
 perfectFourth : Float -> Scale
 perfectFourth =
   makeScale 1.333
 
 
+{-| The size of the interval is `3 : 2`
+-}
 perfectFifth : Float -> Scale
 perfectFifth =
   makeScale 1.500
 
 
+{-| The size of the interval is `2 : 1`
+-}
 perfectOctave : Float -> Scale
 perfectOctave =
   makeScale 2
@@ -150,32 +166,46 @@ perfectOctave =
 -- Augmented Scales --
 ----------------------
 
+{-| The size of the interval is `75 : 64`
+-}
 augmentedSecond : Float -> Scale
 augmentedSecond =
   makeScale ( 75 / 64 )
 
 
+{-| The size of the interval is `125 : 96`
+-}
 augmentedThird : Float -> Scale
 augmentedThird =
   makeScale ( 125 / 96 )
 
+{-| The size of the interval is `45 : 32`
+-}
 augmentedFourth : Float -> Scale
 augmentedFourth =
   makeScale 1.414
 
 
+{-| The size of the interval is `25 : 16`
+-}
 augmentedFifth : Float -> Scale
 augmentedFifth =
   makeScale ( 25 / 16 )
 
+{-| The size of the interval is `7 : 4`
+-}
 augmentedSixth : Float -> Scale
 augmentedSixth =
   makeScale ( 7 / 4 )
 
+{-| The size of the interval is `125 : 64`
+-}
 augmentedSeventh : Float -> Scale
 augmentedSeventh =
   makeScale ( 125 / 64 )
 
+{-| The size of the interval is `25 : 12`
+-}
 augmentedOctave : Float -> Scale
 augmentedOctave =
   makeScale ( 25 / 12 )
@@ -184,6 +214,8 @@ augmentedOctave =
 -- Common Scales --
 -------------------
 
+{-| The size of the interval is `1.618`
+-}
 goldenRatio : Float -> Scale
 goldenRatio =
   makeScale ( (1 + sqrt 5) / 2 )
